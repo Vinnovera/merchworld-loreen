@@ -1,0 +1,204 @@
+/*******************************************************/
+/************************ MENU *************************/
+/*******************************************************/
+header {
+	
+	.menu {		
+		
+		button {
+			display: none;
+		}
+	
+		.main-menu {
+			
+			ul {
+				text-align: center;
+				margin: 0 auto;
+				position: absolute;
+				top: 20px;
+				height: 50px;
+				
+				li {
+					display: inline-block;
+					padding-left: 0px;
+					margin-left: ;
+					margin-right: 1%;
+					
+					a {
+						padding: 2px;
+						font-weight: bold;
+						float: left;
+					}
+				}
+			}
+			
+			.links-left {
+				
+				left: 300px;
+			}
+			
+			.links-right {
+				
+				right: 50px;
+				
+				a {
+					font-size: 10px;
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+}
+/*******************************************************/
+/************************ SHOP *************************/
+/*******************************************************/
+.shop {
+	padding-top: 10em;
+	
+	//style, index.php (shopen)
+	.items {
+		padding-top: 0%;
+		width: 70%;
+		
+		ul {
+			.item {
+				//outline: solid red 1px;
+				float: left;
+				margin: 1.5%;
+				width: 22%;
+			}
+		}
+	}
+	
+	//style, single-item.php (sida där en produkt visas)
+	.item-show {
+		margin-bottom: 5%;
+		overflow: hidden;
+		width: 80%;
+
+		.item-image {
+			padding-top: 1em;
+			padding-bottom: 1em;
+			text-align: center;
+			width: 44%;
+			
+			img {
+				max-width: 95%;
+			}
+		}
+
+		.item-image, .item-info {
+			float: left;
+		}
+		
+		.item-info {
+			padding: 1% 3%;
+			width: 50%;
+			
+			p {
+				font-size: 0.8em;
+			}
+		
+			.options {
+				width: 100%;
+				
+				fieldset, .price, button {
+					float: left;
+				}
+				
+				fieldset:nth-of-type(2) {
+					margin-left: 0.5em;
+				}
+				
+				button {
+					margin-left: 1em;
+					margin-top: 0;
+				}
+								
+				&:after {
+					clear: both;
+					content: "";
+					display: block;
+				}
+			}
+			
+			.options:nth-of-type(2) {
+				height: 50px;
+				margin-top: 0.5em;
+				
+				p {
+					line-height: 50px;
+					vertical-align: middle
+				}
+			}
+			
+			.social-share {
+				.social-icon {
+					display: inline-block;
+					margin: 10px 0;
+					width: 23.5%;
+				}
+			}
+		}
+	}
+}
+/*******************************************************/
+/********************** VARUKORG ***********************/
+/*******************************************************/
+#shopping-cart {
+	
+	h2 {
+		width: 70vw;
+		margin-top: 0;
+		text-transform: uppercase;
+	}
+	
+	.shopping-cart-item {
+
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	}
+	
+	&:after {
+		clear: both;
+		content: "";
+		display: block;
+	}
+}
+/*******************************************************/
+/*********************** FOOTER ************************/
+/*******************************************************/
+footer {	
+	height: 18em;
+
+	.contact, .about {
+		float: left;
+		margin-left: 10em;
+	}
+
+	img {
+		clear: both;
+		display: block;
+		margin-left: 10em;
+		padding-top: 1em;
+	}
+}
+/*******************************************************/
+/******************* LINKS IN FOOTER *******************/
+/*******************************************************/
+.wrapper{
+	padding-top: 6em;
+	
+	.content{
+		padding: 2em 15%;
+		width: 60%;
+		
+		fieldset{
+			input, textarea, select{
+				width: 40%;
+			}
+		}
+	}
+}
